@@ -1,8 +1,20 @@
 package com.spring.learnspringboot.courses.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
+
+    @Id
+    @GeneratedValue
     private long id;
+
+    //@Column(name="course_name")
     private String name;
+
     private String author;
 
     public Course(long id, String name, String author) {

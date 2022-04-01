@@ -11,12 +11,12 @@ public class CourseController {
 
     @GetMapping("/courses")
     public List<Course> getAllCourse(){
-        return List.of(new Course(1, "Learn Microservices", "spring"), new Course(2, "Learn Full Stack with React", "spring"));
+        return List.of(new Course(11, "Learn Microservices", "spring"), new Course(2, "Learn Full Stack with React", "spring"));
     }
 
     @GetMapping("/courses/1")
     public Course getCourseDetails(){
-        return new Course(1, "Learn Microservices", "spring");
+        return new Course(21, "Learn Microservices1", "spring2");
     }
 
 }
