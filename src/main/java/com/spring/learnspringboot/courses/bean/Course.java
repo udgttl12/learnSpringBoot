@@ -23,6 +23,10 @@ public class Course {
         this.author = author;
     }
 
+    public Course() {
+
+    }
+
     @Override
     public String toString() {
         return "Course{" +
